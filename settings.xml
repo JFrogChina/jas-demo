@@ -4,12 +4,12 @@
   <servers>
     <server>
       <username>alexwang</username>
-      <password>{$alex_apikey}</password>
+      <password>${alex_apikey_jfrog_io}</password>
       <id>central</id>
     </server>
     <server>
-<username>alexwang</username>
-      <password>{$alex_apikey}</password>
+      <username>alexwang</username>
+      <password>${alex_apikey_jfrog_io}</password>
       <id>snapshots</id>
     </server>
   </servers>
@@ -21,14 +21,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>eplus-libs-release</name>
-          <url>https://demo.jfrogchina.com:443/artifactory/eplus-libs-release</url>
+          <name>alex-maven-virtual</name>
+          <url>https://soleng.jfrog.io/artifactory/alex-maven-virtual</url>
         </repository>
         <repository>
           <snapshots />
           <id>snapshots</id>
-          <name>eplus-libs-snapshot</name>
-          <url>https://demo.jfrogchina.com:443/artifactory/eplus-libs-snapshot</url>
+          <name>alex-maven-virtual</name>
+          <url>https://soleng.jfrog.io/artifactory/alex-maven-virtual</url>
         </repository>
       </repositories>
       <pluginRepositories>
@@ -37,14 +37,14 @@
             <enabled>false</enabled>
           </snapshots>
           <id>central</id>
-          <name>eplus-libs-release</name>
-          <url>https://demo.jfrogchina.com:443/artifactory/eplus-libs-release</url>
+          <name>alex-maven-virtual</name>
+          <url>https://soleng.jfrog.io/artifactory/alex-maven-virtual</url>
         </pluginRepository>
         <pluginRepository>
           <snapshots />
           <id>snapshots</id>
-          <name>eplus-libs-snapshot</name>
-          <url>https://demo.jfrogchina.com:443/artifactory/eplus-libs-snapshot</url>
+          <name>alex-maven-virtual</name>
+          <url>https://soleng.jfrog.io/artifactory/alex-maven-virtual</url>
         </pluginRepository>
       </pluginRepositories>
       <id>artifactory</id>
@@ -54,3 +54,4 @@
     <activeProfile>artifactory</activeProfile>
   </activeProfiles>
 </settings>
+

@@ -1,0 +1,10 @@
+version: 1
+type: maven
+resolver:
+    serverId: jfrogchina
+    snapshotRepo: eplus-libs-release
+    releaseRepo: eplus-libs-release
+deployer:
+    serverId: jfrogchina
+    snapshotRepo: eplus-libs-release
+    releaseRepo: eplus-libs-release

@@ -7,19 +7,6 @@ build:
  image: maven:3.5.4-jdk-8-alpine
  stage: build
  script:
- # Install
-    - apk add git 
- # Set the M2_HOME environment variable 
-    - export M2_HOME=/usr/share/maven
- # Download JFrog CLI
-    - curl -fL https://install-cli.jfrog.io | sh
- # Configure Artifactory instance with JFrog CLI
- #   - /usr/local/bin/jfrog config add jfrogchina --artifactory-url=$JFROG_PLATFORM_URL --user=$JFROG_PLATFORM_USER --password=$JFROG_PLATFORM_PASS
-    - /usr/local/bin/jf c add --artifactory-url=$JFROG_ARTIFACTORY_URL --url="https://demo.jfrogchina.com/" --user=$JFROG_PLATFORM_USER --password=$JFROG_PLATFORM_PASS  --interactive=false jfrogchina
-    
-    - /usr/local/bin/jf c show
-    - /usr/local/bin/jf c use jfrogchina
-    - /usr/local/bin/jf mvnc --server-id-resolve=jfrogchina --repo-resolve-releases=eplus-libs-release --repo-resolve-snapshots=eplus-libs-release --server-id-deploy=jfrogchina --repo-deploy-releases=eplus-libs-release --repo-deploy-snapshots=eplus-libs-release
- # Mvn clean install
+
 
     - mvn deploy -s settings.xml

@@ -61,13 +61,23 @@
 		<repository>
 			<id>central</id>
 			<name>Enterprise SaaS-releases</name>
-			<url>https://soleng.jfrog.io/artifactory/alex-maven-virtual/</url>
+			<url>https://demo.jfrogchina.com:443/artifactory/alex-maven/</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Enterprise SaaS-snapshots</name>
-			<url>https://soleng.jfrog.io/artifactory/alex-maven-virtual/</url>
+			<url>https://demo.jfrogchina.com:443/artifactory/alex-maven/</url>
 		</snapshotRepository>
+<!--		<repository>-->
+<!--			<id>central</id>-->
+<!--			<name>Enterprise SaaS-releases</name>-->
+<!--			<url>https://jfrog.dev.osssc.ac.cn/artifactory/maven-virtual/</url>-->
+<!--		</repository>-->
+<!--		<snapshotRepository>-->
+<!--			<id>snapshots</id>-->
+<!--			<name>Enterprise SaaS-snapshots</name>-->
+<!--			<url>https://jfrog.dev.osssc.ac.cn/artifactory/maven-virtual/</url>-->
+<!--		</snapshotRepository>-->
 
 		<!--        <repository>-->
 		<!--            <id>central</id>-->

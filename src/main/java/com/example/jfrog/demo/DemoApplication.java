@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 public class DemoApplication {
 
-	String secretValue = "secr37Value";
+	private static String secretValue = "secr37Value";
 
 	private static final Logger logger = LogManager.getLogger();
 

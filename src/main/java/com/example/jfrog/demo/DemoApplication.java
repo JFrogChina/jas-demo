@@ -36,8 +36,6 @@ public class DemoApplication {
 
 		if (secretValue.equals("test")) {
 			System.out.println("Secret exposed");
-			// lesson-template.sample-attack.success is defined in
-			// src/main/resources/i18n/WebGoatLabels.properties
 		}
 
 		SpringApplication.run(DemoApplication.class, args);

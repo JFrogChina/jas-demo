@@ -19,7 +19,7 @@ Would you like to filter out some of the deployed artifacts? (y/n) [n]? n
 
 ## Index build by API
 ```dtd
- curl -u alexwang:${token} -X POST "https://${artifactory}/xray/api/v1/binMgr/builds" \
+ curl -u ${ARTIFACTORY_USER}:${alex_apikey_jfrog_io} -X POST "=https://soleng.jfrog.io/xray/api/v1/binMgr/builds" \
         -H "Content-Type: application/json" \
         -d '{
         "names": ["jas-demo"]
@@ -30,8 +30,8 @@ Would you like to filter out some of the deployed artifacts? (y/n) [n]? n
 ## Maven build and publish build info to Artifactory
 Build the project, while deploying artifacts to Artifactory
 ```dtd
-jf mvn package
-jf mvn deploy --build-name jas-demo --build-number 1
+<!--jf mvn package-->
+jf mvn clean install --build-name jas-demo --build-number 1
 jf rt bag
 jf rt bce jas-demo  1
 jf rt bp  jas-demo  1

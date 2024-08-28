@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example.jfrog</groupId>
 	<artifactId>app-boot</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2</version>
 	<packaging>war</packaging>
 	<name>app-boot</name>
 	<description>Demo project for Spring Boot</description>

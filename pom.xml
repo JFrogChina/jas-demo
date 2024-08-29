@@ -58,39 +58,4 @@
 <!--		</plugins>-->
 <!--	</build>-->
 
-	<distributionManagement>
-		<repository>
-			<id>central</id>
-			<name>Enterprise SaaS-releases</name>
-			<url>https://demo.jfrogchina.com:443/artifactory/alex-maven/</url>
-		</repository>
-		<snapshotRepository>
-			<id>snapshots</id>
-			<name>Enterprise SaaS-snapshots</name>
-			<url>https://demo.jfrogchina.com:443/artifactory/alex-maven/</url>
-		</snapshotRepository>
-<!--		<repository>-->
-<!--			<id>central</id>-->
-<!--			<name>Enterprise SaaS-releases</name>-->
-<!--			<url>https://jfrog.dev.osssc.ac.cn/artifactory/maven-virtual/</url>-->
-<!--		</repository>-->
-<!--		<snapshotRepository>-->
-<!--			<id>snapshots</id>-->
-<!--			<name>Enterprise SaaS-snapshots</name>-->
-<!--			<url>https://jfrog.dev.osssc.ac.cn/artifactory/maven-virtual/</url>-->
-<!--		</snapshotRepository>-->
-
-		<!--        <repository>-->
-		<!--            <id>central</id>-->
-		<!--            <name>slash-host11-releases</name>-->
-		<!--            <url>http://60.205.112.114:8084/repository/slash-nexus-maven-host</url>-->
-		<!--        </repository>-->
-		<!--        <snapshotRepository>-->
-		<!--            <id>snapshots</id>-->
-		<!--            <name>slash-host11-snapshots</name>-->
-		<!--            <url>http://60.205.112.114:8084/repository/slash-nexus-maven-host</url>-->
-		<!--        </snapshotRepository>-->
-
-	</distributionManagement>
-
 </project>

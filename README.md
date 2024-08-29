@@ -33,7 +33,7 @@ Build the project, while deploying artifacts to Artifactory
 <!--jf mvn package-->
 jf mvn clean install --build-name jas-demo --build-number 1
 jf rt bag
-jf rt bce jas-demo  1
+jf rt bce jas-demo  1 
 jf rt bp  jas-demo  1
 ```
 

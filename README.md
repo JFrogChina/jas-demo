@@ -31,7 +31,7 @@ Would you like to filter out some of the deployed artifacts? (y/n) [n]? n
 Build the project, while deploying artifacts to Artifactory
 ```dtd
 <!--jf mvn package-->
-jf mvn clean install --build-name jas-demo --build-number 1
+jf mvn package --build-name jas-demo --build-number 1
 jf rt bag
 jf rt bce jas-demo  1 
 jf rt bp  jas-demo  1
@@ -43,6 +43,6 @@ docker login acme.jfrog.io
 docker build -t jas-demo:v1 .
 docker tag jas-demo:v1 acme.jfrog.io/alexwang-docker/jas-demo:v1
 docker push acme.jfrog.io/alexwang-docker/jas-demo:v1
-jf docker push acme.jfrog.io/alex-docker/jas-demo:v1 --build-name=docker-app --build-number=1
-jf rt bp docker-app 1
+jf docker push acme.jfrog.io/alexwang-docker/jas-demo:v1 --build-name=jas-demo-docker --build-number=1
+jf rt bp jas-demo-docker 1
 ```
